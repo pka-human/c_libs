@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <conio.h>
 
 #define create_empty_dca create_dca(NULL)
 
@@ -111,17 +112,30 @@ struct dynamic_char_array input(char invitation[]) {
     printf("%s", invitation);
     struct dynamic_char_array outputstring = create_empty_dca;
     bool err = false;
-    char tmpchar = getchar();
-    while (tmpchar != '\n') {
-        if (!add(&outputstring, tmpchar)) {
-            err = true;
+    char tmpchar;
+    while (1) {
+        tmpchar = getch();
+        if (tmpchar == '\b') {
+            if (outputstring.size > 0) {
+                if (!del(&outputstring, outputstring.size - 1)) {
+                    err = true;
+                    break;
+                }
+                printf("\b \b");
+            }
+        } else if (tmpchar == '\r') {
             break;
+        } else {
+            if (!add(&outputstring, tmpchar)) {
+                err = true;
+            }
+            putchar(tmpchar);
         }
-        tmpchar = getchar();
     }
     if (!add(&outputstring, '\0')) {
         err = true;
     }
+    putchar('\n');
     if (!err) {
         return outputstring;
     }
