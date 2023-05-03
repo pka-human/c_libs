@@ -5,10 +5,10 @@ These libraries augment the C language with additional features and expedite dev
 # What are the solutions?
 
 - **charMaster.h**
-	- `Int2Char()` — *Returns a number as a char literal.*
-	- `Char2Int()` — *If literal is number returns its int equivalent.*
+	- `Int2Char()` — Returns a number as a char literal.
+	- `Char2Int()` — If literal is number returns its int equivalent.
 - **dca.h**
-	- `dca` — *A new data type (dynamic character array) which is a structure containing the fields array (literal) and size (literal size in characters).*
+	- `dca` — A new data type (dynamic character array) which is a structure containing the fields array (literal) and size (literal size in characters).
 	- `create_dca()` — Returns dca which contains the literal passed as the argument.
 	- `create_empty_dca` — Macro to create an empty dynamic character array (equal `create_dca(NULL)`).
 	- `get()` — Function to get the value at a given position of the dynamic character array.
