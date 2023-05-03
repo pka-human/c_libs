@@ -40,7 +40,7 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
-№№№ Output:
+### Output:
 ```
 Text: Some text.
 
