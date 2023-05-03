@@ -19,3 +19,33 @@ These libraries augment the C language with additional features and expedite dev
 	- `ksets()` — Function to set a string of characters at the end of the dynamic character array.
 	- `del()` — Function to delete a value at a given position of the dynamic character array and shift all values after the specified position.
 	- `input()` — Function to get input from the user and return a dynamic character array containing the input string.
+
+# Example
+### Code:
+```c
+#include <stdio.h>
+#include "../lib/dca.h"
+#include "../lib/charMaster.h"
+
+int main(int argc, char* argv[]) {
+    dca text = input("Text: ");
+    dca num = create_dca(Int2Char(text.size - 1));
+
+    ksets(&num, " <- size");
+
+    printf("\nEntered text: %s\n%s\n", text.array, num.array);
+
+    clear(&text);
+    clear(&num);
+    return 0;
+}
+```
+Output:
+```
+Text: Some text.
+
+Entered text: Some text.
+10 <- size
+```
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=1&pause=300&color=28F700&width=435&lines=_;E_;Ea_;Eas_;Easy_;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy_;Eas_;Ea_;E_;_;+;_;+;_;+;_;+)](https://git.io/typing-svg)
