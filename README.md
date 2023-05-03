@@ -13,7 +13,7 @@ These libraries augment the C language with additional features and expedite dev
 	- `create_empty_dca` — Macro to create an empty dynamic character array (equal `create_dca(NULL)`).
 	- `get()` — Function to get the value at a given position of the dynamic character array.
 	- `add()` — Function to add a character to the end of the dynamic character array.
-	- `clear` — Function to free the memory allocated for the dynamic character array and reset its size to zero (clear dca).
+	- `clear()` — Function to free the memory allocated for the dynamic character array and reset its size to zero (clear dca).
 	- `set()` — Function to set a value at a given position of the dynamic character array.
 	- `sets()` — Function to clear the dynamic character array and set a string of characters at the end of it.
 	- `ksets()` — Function to set a string of characters at the end of the dynamic character array.
