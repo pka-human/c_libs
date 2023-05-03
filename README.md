@@ -48,4 +48,4 @@ Entered text: Some text.
 10 <- size
 ```
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=1&pause=300&color=28F700&width=435&lines=_;E_;Ea_;Eas_;Easy_;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy_;Eas_;Ea_;E_;_;+;_;+;_;+;_;+)]
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=1&pause=300&color=28F700&width=435&lines=_;E_;Ea_;Eas_;Easy_;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy!;Easy!_;Easy_;Eas_;Ea_;E_;_;+;_;+;_;+;_;+)
